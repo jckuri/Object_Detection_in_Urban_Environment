@@ -112,6 +112,32 @@ won't be able to train the neural network.
 
 (This section should contain a quantitative and qualitative description of the dataset. It should include images, charts and other visualizations.)
 
+You can see the Exploratory Data Analysis (EDA) in this Jupyter notebook:
+[Exploratory%20Data%20Analysis.ipynb](Exploratory%20Data%20Analysis.ipynb)
+
+Basically, this dataset contains many `.tfrecord` files.
+And each `.tfrecord` file is a collection of annotated videos with multiple sensors:
+Many cameras, many lidars, and radars.
+
+For the sake of simplicity, in this project we only analyze 1 camera.
+So, we drastically reduced the complexity of the original `.tfrecord` files.
+The simpler versions of the `.tfrecord` files only have 1 annotated camera video
+with many annotated frames.
+
+Here is an example of an annotated frame:
+
+![images/example_of_detections.png](images/example_of_detections.png)
+
+After doing a long analysis of a big enough sample of annotated frames, the 
+following statistics were obtained:
+
+![images/EDA.png](images/EDA.png)
+
+The stereotypical sizes of cars, bikes, and pedestrians matches our common sense.
+
+However, the amount of bikes in this dataset is very low. So, this fact was 
+considered in the cross validation strategy.
+
 #### Cross validation
 
 (This section should detail the cross validation strategy and justify your approach.)
