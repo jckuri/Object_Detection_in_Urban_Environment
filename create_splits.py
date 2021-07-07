@@ -111,8 +111,8 @@ def split(data_dir):
     clean_split_dirs(data_dir)
     print('COPYING BIKE FILES...')
     split_and_copy_files(data_dir, bike_files)
-    #print('COPYING BIKELESS FILES...')
-    #split_and_copy_files(data_dir, bikeless_files)
+    print('COPYING BIKELESS FILES...')
+    split_and_copy_files(data_dir, bikeless_files)
 
 
 if __name__ == "__main__": 

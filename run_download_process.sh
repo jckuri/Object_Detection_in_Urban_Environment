@@ -1,1 +1,2 @@
-python download_process.py --data_dir download/data --temp_dir download/temp
+echo "DATA_DIR=$DATA_DIR"
+python download_process.py --data_dir $DATA_DIR --temp_dir $DATA_DIR/TEMP
