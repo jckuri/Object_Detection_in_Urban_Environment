@@ -97,10 +97,12 @@ tf.Tensor(250054100000.0, shape=(), dtype=float32)
 Time taken: 0:00:28.153059
 ```
 
-If the test above is not passed, you should install tensorflow-gpu 2.1.0 again:
+If the test above is not passed, you should install `tensorflow-gpu 2.1.0` again
+with this command:
 `pip install tensorflow-gpu==2.1.0`. The test is passed when the Python script
 `two_benchmarks.py` detects the GPU and the matrix multiplication is done by the
-GPU in less than 2 seconds.
+GPU in less than 2 seconds. Make sure that the test is passed. Otherwise you
+won't be able to train the neural network.
 
 #### Project Installation
 
