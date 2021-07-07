@@ -30,10 +30,14 @@ modern GPU. Udacity workspaces have an Ubuntu machine with a
 modern GPU. So, it is recommended to follow these instructions to install all
 the required software in a Udacity workspace.
 
-All these instructions were copied and pasted from the file 
+Some of these instructions were copied and pasted from the file 
 [build/Dockerfile.gpu](build/Dockerfile.gpu).
 
 ```
+conda create --name tensorflow-gpu python=3.6.9
+
+conda activate tensorflow-gpu
+
 sudo apt-get update --fix-missing
 
 sudo apt-get install -y ffmpeg git git-core g++ pkg-config python3-pip unzip vim wget zip zlib1g-dev
@@ -105,6 +109,54 @@ GPU in less than 2 seconds. Make sure that the test is passed. Otherwise you
 won't be able to train the neural network.
 
 #### Project Installation
+
+Clone the github repository of this project:
+
+```
+git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment.git
+```
+
+Clone the github repository of the dataset outside of the project directory:
+
+```
+git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASET.git
+```
+
+Copy the training directory (with the pretrained model, checkpoints, and exported model)
+outside of the project directory:
+[TRAINING.ZIP](TRAINING.ZIP)
+
+It is up to you where you put the dataset directory and the training directory.
+However, you must configure the file `set_data_and_training_dirs.sh` with the corresponding directories.
+So, the environmental variables `$DATA_DIR` and `$TRAINING_DIR` in the file 
+`set_data_and_training_dirs.sh` match with the dataset directory and the 
+training directory.
+
+```
+$ cat set_data_and_training_dirs.sh 
+export DATA_DIR=../DATA
+export TRAINING_DIR=../TRAINING
+echo "DATA_DIR=$DATA_DIR"
+echo "TRAINING_DIR=$TRAINING_DIR"
+```
+
+After correctly configuring the dataset directory and the training directory,
+you must execute the command:
+
+```
+$ source set_data_and_training_dirs.sh 
+DATA_DIR=../DATA
+TRAINING_DIR=../TRAINING
+```
+
+Finally, you have many commands to execute the main actions of this project.
+The names of the scripts are very informative.
+
+```
+$ ls *.sh
+clean_training_dir.sh  run_create_splits.sh     run_edit_config.sh       run_inference_video.sh                        run_model_main_tf2_evaluation.sh  set_data_and_training_dirs.sh
+git_push.sh            run_download_process.sh  run_exporter_main_v2.sh  run_jupyter_notebook_inside_nvidia_docker.sh  run_model_main_tf2_training.sh
+```
 
 ### Dataset
 
