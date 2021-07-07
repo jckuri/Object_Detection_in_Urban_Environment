@@ -22,7 +22,16 @@ in which they are driving autonomously.
 
 (This section should contain a brief description of the steps to follow to run the code for this repository.)
 
-Basically, 
+#### Infrastructure Installation
+
+You can avoid using nvidia-docker which is problematic.
+You can install all the required software directly on an Ubuntu machine with a
+modern GPU. Udacity workspaces have an Ubuntu machine with a
+modern GPU. So, it is recommended to follow these instructions to install all
+the required software in a Udacity workspace.
+
+All these instructions were copied and pasted from the file 
+[build/Dockerfile.gpu](build/Dockerfile.gpu).
 
 ```
 sudo apt-get update --fix-missing
@@ -92,6 +101,8 @@ If the test above is not passed, you should install tensorflow-gpu 2.1.0 again:
 `pip install tensorflow-gpu==2.1.0`. The test is passed when the Python script
 `two_benchmarks.py` detects the GPU and the matrix multiplication is done by the
 GPU in less than 2 seconds.
+
+#### Project Installation
 
 ### Dataset
 
