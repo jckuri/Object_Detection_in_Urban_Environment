@@ -203,15 +203,43 @@ considered in the cross validation strategy.
 
 (This section should detail the cross validation strategy and justify your approach.)
 
+In the Python script `create_splits.py`, I programmed the cross validation strategy.
+In summary, given that the amount of bikes in the videos is very low, less than `1%`
+of the objects, I decided to separate the `.tfrecord` files with bikes and without bikes.
+
+From the `.tfrecord` files with bikes, I sampled the dataset with the proportions:
+Training dataset `70%`, cross-validation dataset `15%`, and test dataset `15%`.
+
+From the `.tfrecord` files without bikes, I sampled the dataset with the proportions:
+Training dataset `70%`, cross-validation dataset `15%`, and test dataset `15%`.
+
+In this way, it is guaranteed that all the datasets will contain bikes.
+And here are the resulting datasets:
+
+https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASET
+
 ### Training 
 
 #### Reference experiment
 
 (This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.)
 
+**Object Detection in an Urban Environment (Low Quality Detections) \[SDC ND\]<br/>
+https://youtu.be/MfV_ATv9mlk<br/>**
+![images/demo_low_quality.png](images/demo_low_quality.png)
+
+**Tensorboard Visualization of Training:<br/>**
+![images/tensorboard_low_quality.png](images/tensorboard_low_quality.png)
+
+
 #### Improve on the reference
 
 (This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.)
+
+
+### Known Bugs
+
+
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
