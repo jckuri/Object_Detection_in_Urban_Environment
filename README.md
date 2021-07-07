@@ -24,7 +24,9 @@ in which they are driving autonomously.
 
 Basically, 
 
+```
 sudo apt-get update --fix-missing
+
 sudo apt-get install -y ffmpeg git git-core g++ pkg-config python3-pip unzip vim wget zip zlib1g-dev
 
 pip install tensorflow-gpu==2.1.0
@@ -34,26 +36,41 @@ pip3 install -r requirements.txt
 pip3 install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 
 export TF_CPP_MIN_LOG_LEVEL=2
+```
 
-# cd ../.. outside the github project directory
+The following commands should be executed outside of the github project directory.
+(Type `cd ../..`)
+
+``` 
 wget https://github.com/protocolbuffers/protobuf/releases/download/v3.13.0/protoc-3.13.0-linux-x86_64.zip
+
 unzip protoc-3.13.0-linux-x86_64.zip -d protobuf/
 
 export PATH="$PATH:$PWD/protobuf/bin"
 
-git clone https://github.com/tensorflow/models.git
-cd models/research/
-protoc object_detection/protos/*.proto --python_out=.
-cp object_detection/packages/tf2/setup.py .
-python -m pip install .
 
-This last command caused this error:
+git clone https://github.com/tensorflow/models.git
+
+cd models/research/
+
+protoc object_detection/protos/*.proto --python_out=.
+
+cp object_detection/packages/tf2/setup.py .
+
+python -m pip install .
+```
+
+The last command causes this error:
+
 ```
 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
 tensorflow-gpu 2.1.0 requires gast==0.2.2, but you have gast 0.4.0 which is incompatible.
 tensorflow-gpu 2.1.0 requires tensorboard<2.2.0,>=2.1.0, but you have tensorboard 2.5.0 which is incompatible.
 tensorflow-gpu 2.1.0 requires tensorflow-estimator<2.2.0,>=2.1.0rc0, but you have tensorflow-estimator 2.5.0 which is incompatible.
 ```
+
+In the end, you should go to the project directory and execute this test to 
+guarantee that the GPU is being used and accelerates matrix multiplication.
 
 ```
 python two_benchmarks.py 
@@ -70,6 +87,11 @@ Device: /cpu:0.
 tf.Tensor(250054100000.0, shape=(), dtype=float32)
 Time taken: 0:00:28.153059
 ```
+
+If the test above is not passed, you should install tensorflow-gpu 2.1.0 again:
+`pip install tensorflow-gpu==2.1.0`. The test is passed when the Python script
+`two_benchmarks.py` detects the GPU and the matrix multiplication is done by the
+GPU in less than 2 seconds.
 
 ### Dataset
 
