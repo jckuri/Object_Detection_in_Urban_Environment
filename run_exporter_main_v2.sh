@@ -1,0 +1,1 @@
+python ../models/research/object_detection/exporter_main_v2.py --input_type image_tensor --pipeline_config_path training/reference/pipeline_new.config --trained_checkpoint_dir training/reference/ --output_directory training/exported_model/

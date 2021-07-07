@@ -11,6 +11,17 @@ from psutil import cpu_count
 from utils import *
 
 
+def class_text_to_int(class_text):
+    if class_text == 'vehicle':
+        return 1
+    elif class_text == 'pedestrian':
+        return 2
+    elif class_text == 'cyclist':
+        return 4
+    else:
+        return -1
+
+
 def create_tf_example(filename, encoded_jpeg, annotations):
     """
     This function create a tf.train.Example from the Waymo frame.
@@ -25,6 +36,30 @@ def create_tf_example(filename, encoded_jpeg, annotations):
     """
 
     # TODO: Implement function to convert the data
+    
+    encoded_jpg_io = io.BytesIO(encoded_jpeg)
+    image = Image.open(encoded_jpg_io)
+    width, height = image.size
+    
+    mapping = {1: 'vehicle', 2: 'pedestrian', 4: 'cyclist'}
+    image_format = b'jpg'
+    xmins = []
+    xmaxs = []
+    ymins = []
+    ymaxs = []
+    classes_text = []
+    classes = []
+    filename = filename.encode('utf8')
+    
+    for ann in annotations:
+        xmin, ymin = ann.box.center_x - 0.5 * ann.box.length, ann.box.center_y - 0.5 * ann.box.width
+        xmax, ymax = ann.box.center_x + 0.5 * ann.box.length, ann.box.center_y + 0.5 * ann.box.width
+        xmins.append(xmin / width)
+        xmaxs.append(xmax / width)
+        ymins.append(ymin / height)
+        ymaxs.append(ymax / height)    
+        classes.append(ann.type)
+        classes_text.append(mapping[ann.type].encode('utf8'))
 
     tf_example = tf.train.Example(features=tf.train.Features(feature={
         'image/height': int64_feature(height),
@@ -123,9 +158,11 @@ if __name__ == "__main__":
     data_dir = args.data_dir
     temp_dir = args.temp_dir
     # init ray
-    ray.init(num_cpus=cpu_count())
+    #ray.init(num_cpus=cpu_count())
+    ray.init(num_cpus = 1)
 
     workers = [download_and_process.remote(fn, temp_dir, data_dir) for fn in filenames[:100]]
+    #workers = [download_and_process.remote(fn, temp_dir, data_dir) for fn in filenames[:10]]
     _ = ray.get(workers)
 
 
