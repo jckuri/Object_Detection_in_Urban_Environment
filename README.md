@@ -154,8 +154,17 @@ The names of the scripts are very informative.
 
 ```
 $ ls *.sh
-clean_training_dir.sh  run_create_splits.sh     run_edit_config.sh       run_inference_video.sh                        run_model_main_tf2_evaluation.sh  set_data_and_training_dirs.sh
-git_push.sh            run_download_process.sh  run_exporter_main_v2.sh  run_jupyter_notebook_inside_nvidia_docker.sh  run_model_main_tf2_training.sh
+clean_training_dir.sh
+run_create_splits.sh
+run_edit_config.sh
+run_inference_video.sh
+run_model_main_tf2_evaluation.sh
+set_data_and_training_dirs.sh
+git_push.sh            
+run_download_process.sh
+run_exporter_main_v2.sh
+run_jupyter_notebook_inside_nvidia_docker.sh
+run_model_main_tf2_training.sh
 ```
 
 ### Dataset
