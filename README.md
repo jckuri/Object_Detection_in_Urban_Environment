@@ -124,7 +124,7 @@ git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASE
 
 Copy the training directory (with the pretrained model, checkpoints, and exported model)
 outside of the project directory:
-[TRAINING.ZIP](TRAINING.ZIP)
+[https://drive.google.com/file/d/1LfnQ1tGJhriLRfdNx3PuYP96mZHph91-/view?usp=sharing](https://drive.google.com/file/d/1LfnQ1tGJhriLRfdNx3PuYP96mZHph91-/view?usp=sharing)
 
 It is up to you where you put the dataset directory and the training directory.
 However, you must configure the file `set_data_and_training_dirs.sh` with the corresponding directories.
