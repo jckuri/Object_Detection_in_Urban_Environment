@@ -224,18 +224,72 @@ https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASET
 
 (This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.)
 
-**Object Detection in an Urban Environment (Low Quality Detections) \[SDC ND\]<br/>
-https://youtu.be/MfV_ATv9mlk<br/>**
-![images/demo_low_quality.png](images/demo_low_quality.png)
+Fortunately, I managed to configure tensorflow-gpu in my Ubuntu machine with an
+NVidia GPU, after overcoming tons of problems. Configuring tensorflow-gpu and
+making it work in my GPU was the hardest part of this project.
+
+However, my GPU only has 3 Gb of memory. And I had to do many memory-saving tricks
+to train this neural network.
+
+First, I used this code in the following link in order to avoid loading
+many stuff at the GPU initialization.
+
+```
+import tensorflow as tf
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+if len(physical_devices) > 0:
+    tf.config.experimental.set_memory_growth(physical_devices[0], True)
+```
+
+**Tensorflow GPU memory allocation<br/>**
+https://stackoverflow.com/questions/65493824/tensorflow-gpu-memory-allocation
+
+Second, I had to use only 10 `.tfrecord` files for training and I set the batch
+size to `1`.
+
+Third, I could not start the evaluation thread due to the GPU memory constraints.
+And that's why I could not show the validation loss in the following graphs.
 
 **Tensorboard Visualization of Training:<br/>**
 ![images/tensorboard_low_quality.png](images/tensorboard_low_quality.png)
 
+The training loss is evolving well, except for the sudden and abrupt increase
+in the regularization loss.
+
+In the end, this experiment produced decent results. Look at the following video.
+I expect to improve these results by augmenting the dataset, tuning some 
+metaparameters, and running the training in the Cloud (AWS) with more GPU power 
+and more GPU memory.
+
+**Object Detection in an Urban Environment (Low Quality Detections) \[SDC ND\]<br/>
+<https://youtu.be/MfV_ATv9mlk><br/>**
+![images/demo_low_quality.png](images/demo_low_quality.png)
 
 #### Improve on the reference
 
 (This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.)
 
+I will complete this section once I have more GPU power and GPU memory in the 
+Cloud (AWS).
+
+I will tune some metaparameters.
+
+And I plan to use 4 augmentations from this list <https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto>:
+- RandomHorizontalFlip
+- RandomAdjustBrightness
+- RandomAdjustContrast
+- AutoAugmentImage
+
+The last augmentation, AutoAugmentImage, is very special as you can read in
+this article:
+
+**How to improve your image classifier with Google’s AutoAugment<br/>
+<https://towardsdatascience.com/how-to-improve-your-image-classifier-with-googles-autoaugment-77643f0be0c9>**
+
+Basically, AutoAugment automates the augmentation process by combining the most
+powerful image augmentation techniques for object detection:
+
+![images/AutoAugment.png](images/AutoAugment.png)
 
 ### Known Bugs
 
