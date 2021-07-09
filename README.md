@@ -44,6 +44,7 @@ sudo apt-get install -y ffmpeg git git-core g++ pkg-config python3-pip unzip vim
 
 pip install tensorflow-gpu==2.1.0
 
+# This command must be executed in the directory "Object_Detection_in_Urban_Environment/build"
 pip3 install -r requirements.txt
 
 pip3 install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
