@@ -44,3 +44,9 @@ Time taken: 0:00:28.153059
 ================================================================================
 
 
+Tensorflow GPU memory allocation
+https://stackoverflow.com/questions/65493824/tensorflow-gpu-memory-allocation
+
+physical_devices = tf.config.experimental.list_physical_devices('GPU')
+if len(physical_devices) > 0:
+    tf.config.experimental.set_memory_growth(physical_devices[0], True)

@@ -231,7 +231,7 @@ making it work in my GPU was the hardest part of this project.
 However, my GPU only has 3 Gb of memory. And I had to do many memory-saving tricks
 to train this neural network.
 
-First, I used this code in the following link in order to avoid loading
+First, I used this piece of code within the following link in order to avoid loading
 many stuff at the GPU initialization.
 
 ```
