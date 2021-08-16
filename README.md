@@ -5,6 +5,13 @@ https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013**
 
 ## Submission Template
 
+#### Video Demos
+
+![demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png](demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png)
+| Demo with baseline detections | Demo with enhanced detections |
+|-------------------------------|-------------------------------|
+| [baseline_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4)                  | [enhanced_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4)                  |
+
 ### Project overview
 
 (This section should contain a brief description of the project and what we are trying to achieve. Why is object detection such an important component of self driving car systems?)
