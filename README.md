@@ -7,6 +7,7 @@ https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013**
 
 #### Video Demos
 
+
 | segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord ![demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png](demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png)  |
 |---|
 | Demo with baseline detections  |
@@ -14,6 +15,13 @@ https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013**
 | Demo with enhanced detections  |
 | [enhanced_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4)  |
 
+
+| segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord ![demo_images/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.png](demo_images/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4)  |
 
 
 ### Project overview
