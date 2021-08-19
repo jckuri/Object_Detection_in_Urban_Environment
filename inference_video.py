@@ -13,7 +13,7 @@ from object_detection.utils.config_util import get_configs_from_pipeline_file # 
 from object_detection.utils.label_map_util import create_category_index_from_labelmap # pylint: disable=import-error
 from object_detection.utils import visualization_utils as viz_utils # pylint: disable=import-error
 
-from utils import logger
+import utils
 
 
 def main(labelmap_path, model_path, tf_record_path, config_path, output_path):
@@ -34,12 +34,12 @@ def main(labelmap_path, model_path, tf_record_path, config_path, output_path):
 
     # Load saved model and build the detection function
     message = f'Loading model from {model_path}'
-    logger.info(message)
+    LOGGER.info(message)
     detect_fn = tf.saved_model.load(model_path)
 
     # open config file
     message = f'Loading config from {config_path}'
-    logger.info(message)
+    LOGGER.info(message)
     configs = get_configs_from_pipeline_file(config_path)
     #eval_config = configs['eval_config']
     eval_input_config = configs['eval_input_config']
@@ -55,11 +55,11 @@ def main(labelmap_path, model_path, tf_record_path, config_path, output_path):
     # here we infer on the entire dataset
     images = []
     message = f'Inference on {tf_record_path}'
-    logger.info(message)
+    LOGGER.info(message)
     for idx, batch in enumerate(dataset):
         if idx % 50:
             message = f'Step: {idx}'
-            logger.info(message)
+            LOGGER.info(message)
         # add new axis and feed into model
         input_tensor = batch['image']
         image_np = input_tensor.numpy().astype(np.uint8)
@@ -115,8 +115,6 @@ def main_method():
     """
     The main method.
     """
-    #logger2 = get_module_logger(__name__)
-
     parser = argparse.ArgumentParser(description='Create video')
     parser.add_argument('--labelmap_path', required=True, type=str,
                         help='path to the label map')
@@ -139,4 +137,5 @@ def main_method():
 
 
 if __name__ == "__main__":
+    LOGGER = utils.get_module_logger(__name__)
     main_method()

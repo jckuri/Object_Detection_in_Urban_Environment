@@ -100,10 +100,12 @@ def download_tfr(filepath, temp_dir):
 
     # download the tf record file
     cmd = ['gsutil', 'cp', filepath, f'{dest}']
-    utils.logger.info(f'Downloading {filepath}')
+    message = f'Downloading {filepath}'
+    utils.logger.info(message)
     res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     if res.returncode != 0:
-        utils.logger.error(f'Could not download file {filepath}')
+        message = f'Could not download file {filepath}'
+        utils.logger.error(message)
 
     filename = os.path.basename(filepath)
     local_path = os.path.join(dest, filename)
@@ -123,7 +125,8 @@ def process_tfr(filepath, data_dir):
     os.makedirs(dest, exist_ok=True)
     file_name = os.path.basename(filepath)
 
-    utils.logger.info(f'Processing {filepath}')
+    message = f'Processing {filepath}'
+    utils.logger.info(message)
     writer = tf.python_io.TFRecordWriter(f'{dest}/{file_name}')
     dataset = tf.data.TFRecordDataset(filepath, compression_type='')
     for idx, data in enumerate(dataset):
@@ -146,7 +149,8 @@ def download_and_process(filename, temp_dir, data_dir):
     local_path = download_tfr(filename, temp_dir)
     process_tfr(local_path, data_dir)
     # remove the original tf record to save space
-    utils.logger.info(f'Deleting {local_path}')
+    message = f'Deleting {local_path}'
+    utils.logger.info(message)
     os.remove(local_path)
 
 
