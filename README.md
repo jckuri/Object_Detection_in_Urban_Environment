@@ -311,7 +311,8 @@ in the regularization loss. However, the loss values in this baseline experiment
 are more unstable and bigger than the loss values in the enhanced experiment below.
 This is expected and desirable.
 
-In the end, this experiment produced decent results. Look at the following video demos:
+In the end, this experiment produced decent results. Look at the following video
+demos from the test dataset:
 [#video-demos-with-baseline-detections-and-enhanced-detections](#video-demos-with-baseline-detections-and-enhanced-detections)
 
 #### Improve on the reference
