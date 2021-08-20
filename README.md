@@ -32,7 +32,7 @@ You can avoid using nvidia-docker which is problematic.
 You can install all the required software directly on an Ubuntu machine with a
 modern GPU. Udacity workspaces have an Ubuntu machine with a
 modern GPU. So, it is recommended to follow these instructions to install all
-the required software in a Udacity workspace.
+the required software in an Ubuntu machine with a modern GPU.
 
 Some of these instructions were copied and pasted from the file 
 [build/Dockerfile.gpu](build/Dockerfile.gpu).
@@ -297,7 +297,7 @@ powerful image augmentation techniques for object detection:
 ![images/AutoAugment.png](images/AutoAugment.png)
 
 
-#### Video Demos
+#### Video Demos with Baseline Detections and Enhanced Detections
 
 
 | segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord ![demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png](demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png)  |
