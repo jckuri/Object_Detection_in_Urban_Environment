@@ -383,6 +383,13 @@ in the video demos:
 [#video-demos-with-baseline-detections-and-enhanced-detections](#video-demos-with-baseline-detections-and-enhanced-detections)
 
 
+Again, I could not show the validation loss in the TensorBoard graphs due to
+the problem I reported in the Knowledge Platform without answer yet after many days:
+
+**Tensorboard shows training runs. But evaluation runs are not shown.<br/>
+https://knowledge.udacity.com/questions/662724**
+
+
 #### Video Demos with Baseline Detections and Enhanced Detections
 
 
