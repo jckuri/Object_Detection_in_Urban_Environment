@@ -280,8 +280,7 @@ if len(physical_devices) > 0:
 **Tensorflow GPU memory allocation<br/>**
 https://stackoverflow.com/questions/65493824/tensorflow-gpu-memory-allocation
 
-Second, I had to use only 10 `.tfrecord` files for training and I set the batch
-size to `1`.
+Second, I set the batch size to `1`.
 
 Third, I could not start the evaluation thread due to the GPU memory constraints.
 And that's why I could not show the validation loss in the following graphs.
