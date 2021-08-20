@@ -292,6 +292,15 @@ the Knowledge Platform and I have no answer yet after many days:
 **Tensorboard shows training runs. But evaluation runs are not shown.<br/>
 https://knowledge.udacity.com/questions/662724**
 
+How should the validation loss compare to the training loss? 
+The validation loss should be slightly above the training loss.
+The training loss should keep decreasing through time, overfitting more and more.
+And the validation loss should decrease through time as well; until it reaches
+a point of inflection where the validation loss starts increasing.
+The model with the lowest validation loss should be saved as the best model found.
+
+![images/learning_curves.png](images/learning_curves.png)
+
 **Tensorboard Visualization of Training with the Baseline Experiment:<br/>**
 ![images/tensorboard_baseline.png](images/tensorboard_baseline.png)
 
