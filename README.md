@@ -153,25 +153,32 @@ DATA_DIR=../DATA
 TRAINING_DIR=../TRAINING
 ```
 
+
 Execute the command `sh run_edit_config.sh` in order to edit the configuration
 file `pipeline_new.config` and to copy it to the directory `$TRAINING_DIR`.
 
 
-
-run_exporter_main_v2.sh
-run_many_inference_videos.sh
-
-
+Execute the command `sh run_model_main_tf2_training.sh` in order to train the model.
+Execute the command `sh run_model_main_tf2_evaluation.sh` in order to evaluate the model while it is being trained.
+Execute the command `sh run_tensorboard.sh` in order to monitor the tranining and evaluating processes.
 
 
-
-run_model_main_tf2_training.sh
-run_model_main_tf2_evaluation.sh
-run_tensorboard.sh
+Execute the command `sh run_exporter_main_v2.sh` in order to export the recently trained model.
+Execute the command `sh run_many_inference_videos.sh` in order to render the videos in the test dataset.
 
 
-pylint.sh
+Execute the command `sh pylint.sh` in order to show the PEP8 score of the code:
+```
+$ sh pylint.sh 
+************* Module download_process
+download_process.py:28:0: R0914: Too many local variables (21/15) (too-many-locals)
+download_process.py:105:10: W1510: Using subprocess.run without explicitly set `check` is not recommended. (subprocess-run-check)
+************* Module inference_video
+inference_video.py:19:0: R0914: Too many local variables (24/15) (too-many-locals)
 
+------------------------------------------------------------------
+Your code has been rated at 9.92/10 (previous run: 9.92/10, +0.00)
+```
 
 
 Finally, you have many shell scripts to execute the main actions of this project.
