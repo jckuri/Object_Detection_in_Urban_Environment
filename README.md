@@ -127,7 +127,7 @@ Clone the github repository of the dataset outside of the project directory:
 git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASET.git
 ```
 
-Execute the command `sh clean_training_dir.sh` in order to create the training directory and copy the pretrained model.
+Execute the command `sh clean_training_dir.sh` in order to create the directory `$TRAINING_DIR` and copy the pretrained model.
 
 It is up to you where you put the dataset directory and the training directory.
 However, you must configure the file `set_data_and_training_dirs.sh` with the corresponding directories.
