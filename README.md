@@ -289,8 +289,8 @@ I also run this project in the Udacity workspace and I could not show the
 validation loss in the TensorBoard graphs. I even reported this problem to 
 the Knowledge Platform and I have no answer yet after many days:
 
-Tensorboard shows training runs. But evaluation runs are not shown.
-https://knowledge.udacity.com/questions/662724
+**Tensorboard shows training runs. But evaluation runs are not shown.<br/>
+https://knowledge.udacity.com/questions/662724**
 
 **Tensorboard Visualization of Training:<br/>**
 ![images/tensorboard_baseline.png](images/tensorboard_baseline.png)
