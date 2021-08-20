@@ -295,44 +295,85 @@ https://knowledge.udacity.com/questions/662724**
 **Tensorboard Visualization of Training:<br/>**
 ![images/tensorboard_baseline.png](images/tensorboard_baseline.png)
 
-
 The training loss is evolving well, except for the sudden and abrupt increase
 in the regularization loss.
 
-In the end, this experiment produced decent results. Look at the following video.
-I expect to improve these results by augmenting the dataset, tuning some 
-metaparameters, and running the training in the Cloud (AWS) with more GPU power 
-and more GPU memory.
-
-**Object Detection in an Urban Environment (Low Quality Detections) \[SDC ND\]<br/>
-<https://youtu.be/MfV_ATv9mlk><br/>**
-![images/demo_low_quality.png](images/demo_low_quality.png)
+In the end, this experiment produced decent results. Look at the following video demos:
+[#video-demos-with-baseline-detections-and-enhanced-detections](#video-demos-with-baseline-detections-and-enhanced-detections)
 
 #### Improve on the reference
 
 (This section should highlight the different strategies you adopted to improve your model. It should contain relevant figures and details of your findings.)
 
-I will complete this section once I have more GPU power and GPU memory in the 
-Cloud (AWS).
+From this list <https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto>,
+I used the following data augmentation strategies in order to make pattern recognition more invariant and overcome
+overfitting:
 
-I will tune some metaparameters.
+- `random_crop_image`
+- `random_horizontal_flip`
+- `random_adjust_brightness`
+- `random_adjust_contrast`
+- `random_adjust_hue`
+- `random_adjust_saturation`
+- `random_image_scale`
+- `random_rgb_to_gray`
 
-And I plan to use 4 augmentations from this list <https://github.com/tensorflow/models/blob/master/research/object_detection/protos/preprocessor.proto>:
-- RandomHorizontalFlip
-- RandomAdjustBrightness
-- RandomAdjustContrast
-- AutoAugmentImage
+And here is the code I added to the original file `pipeline.config`:
 
-The last augmentation, AutoAugmentImage, is very special as you can read in
-this article:
+```
+  data_augmentation_options {
+    random_crop_image {
+      min_object_covered: 0.0
+      min_aspect_ratio: 0.75
+      max_aspect_ratio: 3.0
+      min_area: 0.75
+      max_area: 1.0
+      overlap_thresh: 0.0
+    }
+  }
+  data_augmentation_options {
+    random_horizontal_flip {
+      probability: 0.5
+    }
+  }
+  data_augmentation_options {
+    random_adjust_brightness {
+      max_delta: 0.1
+    }
+  }
+  data_augmentation_options {
+    random_adjust_contrast {
+      min_delta: 0.9
+      max_delta: 1.1
+    }
+  }
+  data_augmentation_options {
+    random_adjust_hue {
+      max_delta: 0.1
+    }
+  }
+  data_augmentation_options {
+    random_adjust_saturation {
+      min_delta: 0.9
+      max_delta: 1.1
+    }
+  }
+  data_augmentation_options {
+    random_image_scale {
+      min_scale_ratio: 0.9
+      max_scale_ratio: 1.1
+    }
+  }
+  data_augmentation_options {
+    random_rgb_to_gray {
+      probability: 0.1
+    }
+  }
+```
 
-**How to improve your image classifier with Google’s AutoAugment<br/>
-<https://towardsdatascience.com/how-to-improve-your-image-classifier-with-googles-autoaugment-77643f0be0c9>**
-
-Basically, AutoAugment automates the augmentation process by combining the most
-powerful image augmentation techniques for object detection:
-
-![images/AutoAugment.png](images/AutoAugment.png)
+And you can see how the data augmentation strategies improved the object detection
+in the video demos:
+[#video-demos-with-baseline-detections-and-enhanced-detections](#video-demos-with-baseline-detections-and-enhanced-detections)
 
 
 #### Video Demos with Baseline Detections and Enhanced Detections
