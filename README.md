@@ -124,14 +124,11 @@ git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment.git
 
 | Download the dataset |
 |--------------------------|
-| `sh run_download_process.sh` |
-| `sh run_create_splits.sh` |
-|                           |
-|Clone the github repository of the dataset outside of the project directory:|
-|```
+| `sh run_download_process.sh` and `sh run_create_splits.sh` |
+|Clone the github repository of the dataset outside of the project directory:
+```
 git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASET.git
 ```|
-|                           |
 
 Execute the command `sh clean_training_dir.sh` in order to create the directory `$TRAINING_DIR` and copy the pretrained model.
 
