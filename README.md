@@ -296,9 +296,9 @@ How should the validation loss compare to the training loss?
 The validation loss should be slightly above the training loss.
 The training loss should keep decreasing through time, overfitting more and more.
 And the validation loss should decrease through time as well; until it reaches
-a point of inflection where the validation loss starts increasing.
+an inflection point where the validation loss starts increasing.
 The model with the lowest validation loss should be saved as the best model found.
-And learning should be stop early when there is no decrease in the minimal 
+And learning should be early stopped when there is no decrease in the minimal 
 validation loss for many iterations.
 
 ![images/learning_curves.png](images/learning_curves.png)
