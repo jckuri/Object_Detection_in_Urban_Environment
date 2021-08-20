@@ -385,7 +385,7 @@ And here is the code I added to the original file `pipeline.config`:
   }
 ```
 
-You can see the augmentations in the Jupyter notebook [`Explore augmentations.ipynb`](Explore augmentations.ipynb).
+You can see the augmentations in the Jupyter notebook [Explore augmentations.ipynb]("Explore augmentations.ipynb").
 
 The data augmentation strategies produced a better learning curve with lower
 losses and its evolution was more stable through time than the previous experiment.
