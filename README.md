@@ -121,11 +121,18 @@ Clone the github repository of this project:
 git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment.git
 ```
 
-Clone the github repository of the dataset outside of the project directory:
-
+|--------------------------|
+|---Download the dataset---|
+|--------------------------|
+| `sh run_download_process.sh` |
+| `sh run_create_splits.sh` |
+|--------------------------|
+|Clone the github repository of the dataset outside of the project directory:|
+|
 ```
 git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASET.git
-```
+```|
+|--------------------------|
 
 Execute the command `sh clean_training_dir.sh` in order to create the directory `$TRAINING_DIR` and copy the pretrained model.
 
@@ -152,22 +159,46 @@ DATA_DIR=../DATA
 TRAINING_DIR=../TRAINING
 ```
 
-Finally, you have many commands to execute the main actions of this project.
+Execute the command `sh run_edit_config.sh` in order to edit the configuration
+file `pipeline_new.config` and to copy it to the directory `$TRAINING_DIR`.
+
+
+
+run_exporter_main_v2.sh
+run_many_inference_videos.sh
+
+
+
+
+
+run_model_main_tf2_training.sh
+run_model_main_tf2_evaluation.sh
+run_tensorboard.sh
+
+
+pylint.sh
+
+
+
+Finally, you have many shell scripts to execute the main actions of this project.
 The names of the scripts are very informative.
 
 ```
 $ ls *.sh
-clean_training_dir.sh
+autopep8.sh
+git_push.sh
 run_create_splits.sh
 run_edit_config.sh
 run_inference_video.sh
 run_model_main_tf2_evaluation.sh
-set_data_and_training_dirs.sh
-git_push.sh            
+run_tensorboard.sh
+clean_training_dir.sh
+pylint.sh
 run_download_process.sh
 run_exporter_main_v2.sh
-run_jupyter_notebook_inside_nvidia_docker.sh
+run_many_inference_videos.sh
 run_model_main_tf2_training.sh
+set_data_and_training_dirs.sh
 ```
 
 ### Dataset
