@@ -371,9 +371,11 @@ And here is the code I added to the original file `pipeline.config`:
   }
 ```
 
+The data augmentation strategies produced a better learning curve with lower
+losses and its evolution was more stable through time than the previous experiment.
+
 **Tensorboard Visualization of Training with the Enhanced Experiment:<br/>**
 ![images/tensorboard_baseline.png](images/tensorboard_enhanced.png)
-
 
 
 And you can see how the data augmentation strategies improved the object detection
