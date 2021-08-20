@@ -292,7 +292,7 @@ the Knowledge Platform and I have no answer yet after many days:
 **Tensorboard shows training runs. But evaluation runs are not shown.<br/>
 https://knowledge.udacity.com/questions/662724**
 
-**Tensorboard Visualization of Training:<br/>**
+**Tensorboard Visualization of Training with the Baseline Experiment:<br/>**
 ![images/tensorboard_baseline.png](images/tensorboard_baseline.png)
 
 The training loss is evolving well, except for the sudden and abrupt increase
@@ -370,6 +370,11 @@ And here is the code I added to the original file `pipeline.config`:
     }
   }
 ```
+
+**Tensorboard Visualization of Training with the Enhanced Experiment:<br/>**
+![images/tensorboard_baseline.png](images/tensorboard_enhanced.png)
+
+
 
 And you can see how the data augmentation strategies improved the object detection
 in the video demos:
