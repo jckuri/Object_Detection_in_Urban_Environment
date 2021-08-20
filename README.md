@@ -307,7 +307,9 @@ validation loss for many iterations.
 ![images/tensorboard_baseline.png](images/tensorboard_baseline.png)
 
 The training loss is evolving well, except for the sudden and abrupt increase
-in the regularization loss.
+in the regularization loss. However, the loss values in this baseline experiment
+are more unstable and bigger than the loss values in the enhanced experiment below.
+This is expected and desirable.
 
 In the end, this experiment produced decent results. Look at the following video demos:
 [#video-demos-with-baseline-detections-and-enhanced-detections](#video-demos-with-baseline-detections-and-enhanced-detections)
