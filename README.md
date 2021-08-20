@@ -5,73 +5,6 @@ https://www.udacity.com/course/self-driving-car-engineer-nanodegree--nd0013**
 
 ## Submission Template
 
-#### Video Demos
-
-
-| segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord ![demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png](demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png)  |
-|---|
-| Demo with baseline detections  |
-| [baseline_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4)  |
-| Demo with enhanced detections  |
-| [enhanced_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4)  |
-
-
-| segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord ![demo_images/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.png](demo_images/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.png)  |
-|---|
-| Demo with baseline detections  |
-| [baseline_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4)  |
-| Demo with enhanced detections  |
-| [enhanced_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4)  |
-
-
-| segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord ![demo_images/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.png](demo_images/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.png)  |
-|---|
-| Demo with baseline detections  |
-| [baseline_detection_videos/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.mp4)  |
-| Demo with enhanced detections  |
-| [enhanced_detection_videos/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.mp4)  |
-
-
-| segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord ![demo_images/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.png](demo_images/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.png)  |
-|---|
-| Demo with baseline detections  |
-| [baseline_detection_videos/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.mp4)  |
-| Demo with enhanced detections  |
-| [enhanced_detection_videos/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.mp4)  |
-
-
-| segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord ![demo_images/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.png](demo_images/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.png)  |
-|---|
-| Demo with baseline detections  |
-| [baseline_detection_videos/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.mp4)  |
-| Demo with enhanced detections  |
-| [enhanced_detection_videos/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.mp4)  |
-
-
-| segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord ![demo_images/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.png](demo_images/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.png)  |
-|---|
-| Demo with baseline detections  |
-| [baseline_detection_videos/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.mp4)  |
-| Demo with enhanced detections  |
-| [enhanced_detection_videos/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.mp4)  |
-
-
-| segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord ![demo_images/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.png](demo_images/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.png)  |
-|---|
-| Demo with baseline detections  |
-| [baseline_detection_videos/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.mp4)  |
-| Demo with enhanced detections  |
-| [enhanced_detection_videos/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.mp4)  |
-
-
-| segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord ![demo_images/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.png](demo_images/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.png)  |
-|---|
-| Demo with baseline detections  |
-| [baseline_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4)  |
-| Demo with enhanced detections  |
-| [enhanced_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4)  |
-
-
 
 ### Project overview
 
@@ -362,6 +295,74 @@ Basically, AutoAugment automates the augmentation process by combining the most
 powerful image augmentation techniques for object detection:
 
 ![images/AutoAugment.png](images/AutoAugment.png)
+
+
+#### Video Demos
+
+
+| segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord ![demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png](demo_images/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10075870402459732738_1060_000_1080_000_with_camera_labels.tfrecord.mp4)  |
+
+
+| segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord ![demo_images/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.png](demo_images/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10664823084372323928_4360_000_4380_000_with_camera_labels.tfrecord.mp4)  |
+
+
+| segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord ![demo_images/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.png](demo_images/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10770759614217273359_1465_000_1485_000_with_camera_labels.tfrecord.mp4)  |
+
+
+| segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord ![demo_images/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.png](demo_images/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-10940952441434390507_1888_710_1908_710_with_camera_labels.tfrecord.mp4)  |
+
+
+| segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord ![demo_images/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.png](demo_images/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11113047206980595400_2560_000_2580_000_with_camera_labels.tfrecord.mp4)  |
+
+
+| segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord ![demo_images/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.png](demo_images/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11183906854663518829_2294_000_2314_000_with_camera_labels.tfrecord.mp4)  |
+
+
+| segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord ![demo_images/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.png](demo_images/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11839652018869852123_2565_000_2585_000_with_camera_labels.tfrecord.mp4)  |
+
+
+| segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord ![demo_images/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.png](demo_images/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.png)  |
+|---|
+| Demo with baseline detections  |
+| [baseline_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4](baseline_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4)  |
+| Demo with enhanced detections  |
+| [enhanced_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4)  |
+
 
 ### Known Bugs
 
