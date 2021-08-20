@@ -457,8 +457,6 @@ https://knowledge.udacity.com/questions/662724**
 | [enhanced_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4](enhanced_detection_videos/segment-11940460932056521663_1760_000_1780_000_with_camera_labels.tfrecord.mp4)  |
 
 
-### Known Bugs
-
 
 
 --------------------------------------------------------------------------------
