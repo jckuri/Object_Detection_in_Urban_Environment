@@ -123,12 +123,10 @@ git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment.git
 
 Install `gcloud` by running the commands: `curl https://sdk.cloud.google.com | bash` and `gcloud auth login`. Then, download the dataset by running this command `sh run_download_process.sh`. Split the dataset by running this command `sh run_create_splits.sh`.
 
-Alternatively, you can skip the previous instructions in the last paragraph by cloning the github repository of the dataset outside of the project directory: 
+Alternatively, you can skip the previous instructions in the last paragraph by executing this command `sh download_dataset.sh` or by cloning the github repository of the dataset outside of the project directory: 
 ```
 git clone https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASET.git
 ```
-
-Execute the command `sh clean_training_dir.sh` in order to create the directory `$TRAINING_DIR` and copy the pretrained model.
 
 It is up to you where you put the dataset directory and the training directory.
 However, you must configure the file `set_data_and_training_dirs.sh` with the corresponding directories.
@@ -152,6 +150,8 @@ $ source set_data_and_training_dirs.sh
 DATA_DIR=../DATA
 TRAINING_DIR=../TRAINING
 ```
+
+Execute the command `sh clean_training_dir.sh` in order to create the directory `$TRAINING_DIR` and copy the pretrained model.
 
 
 Execute the command `sh run_edit_config.sh` in order to edit the configuration
@@ -200,6 +200,7 @@ run_exporter_main_v2.sh
 run_many_inference_videos.sh
 run_model_main_tf2_training.sh
 set_data_and_training_dirs.sh
+download_dataset.sh
 ```
 
 ### Dataset
