@@ -285,7 +285,7 @@ Second, I set the batch size to `1`.
 Third, I could not start the evaluation thread due to the GPU memory constraints.
 And that's why I could not show the validation loss in the following graphs.
 
-I also run this project in the Udacity workspace and I could not show the 
+I also ran this project in the Udacity workspace and I could not show the 
 validation loss in the TensorBoard graphs. I even reported this problem to 
 the Knowledge Platform and I have no answer yet after many days:
 
