@@ -258,7 +258,7 @@ https://github.com/jckuri/Object_Detection_in_Urban_Environment_DATASET
 
 #### Reference experiment
 
-(This section should detail the results of the reference experiment. It should includes training metrics and a detailed explanation of the algorithm's performances.)
+(This section should detail the results of the reference experiment. It should include training metrics and a detailed explanation of the algorithm's performances.)
 
 Fortunately, I managed to configure tensorflow-gpu in my Ubuntu machine with an
 NVidia GPU, after overcoming tons of problems. Configuring tensorflow-gpu and
