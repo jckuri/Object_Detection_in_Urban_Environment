@@ -401,6 +401,9 @@ And here is the code I added to the original file `pipeline.config`:
 ```
 
 You can see the augmentations in the Jupyter notebook [Explore augmentations.ipynb](/Explore%20augmentations.ipynb).
+In case you cannot open the Jupyter notebook, I provided the Markdown version of it: [/Explore%20augmentations/Explore%20augmentations.md](/Explore%20augmentations/Explore%20augmentations.md)
+If you see the augmented samples at the end of the Jupyter notebook, you will
+notice that many images have different brightness, different 
 
 The data augmentation strategies produced a better learning curve with lower
 losses and its evolution was more stable through time than the previous experiment.
