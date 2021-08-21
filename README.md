@@ -306,6 +306,21 @@ validation loss for many iterations.
 **Tensorboard Visualization of Training with the Baseline Experiment:<br/>**
 ![images/tensorboard_baseline.png](images/tensorboard_baseline.png)
 
+The classification loss is the error produced when detected objects are classified
+in a wrong way. The localization loss is the error produced when detected objects
+are localized in a wrong position. The regularization loss is the error produced
+when the parameters to optimize are too large. The total loss is the sum of the
+classification loss, the localization loss, and the regularization loss. The 
+learning rate is the size of each step taken toward the solution of an 
+optimization problem.
+
+Both the classification loss and the localization loss start big and decrease
+gradually with some ups and downs. The regularization loss starts big and decrease
+gradually in a smooth way. As a result, the total loss is the sum of all these
+behaviors. The learning rate starts in 0.015 and increases linearly up to 0.04.
+Then the learning rate decreases in a cosinusoidal way from 0 radians (maximum 
+value 0.04) to PI radians (minimum value 0).
+
 The training loss is evolving well, except for the sudden and abrupt increase
 in the regularization loss. However, the loss values in this baseline experiment
 are more unstable and bigger than the loss values in the enhanced experiment below.
@@ -393,6 +408,20 @@ losses and its evolution was more stable through time than the previous experime
 **Tensorboard Visualization of Training with the Enhanced Experiment:<br/>**
 ![images/tensorboard_baseline.png](images/tensorboard_enhanced.png)
 
+The classification loss is the error produced when detected objects are classified
+in a wrong way. The localization loss is the error produced when detected objects
+are localized in a wrong position. The regularization loss is the error produced
+when the parameters to optimize are too large. The total loss is the sum of the
+classification loss, the localization loss, and the regularization loss. The 
+learning rate is the size of each step taken toward the solution of an 
+optimization problem.
+
+Both the classification loss and the localization loss start big and decrease
+gradually with some ups and downs. The regularization loss starts big and decrease
+gradually in a smooth way. As a result, the total loss is the sum of all these
+behaviors. The learning rate starts in 0.015 and increases linearly up to 0.04.
+Then the learning rate decreases in a cosinusoidal way from 0 radians (maximum 
+value 0.04) to PI radians (minimum value 0).
 
 And you can see how the data augmentation strategies improved the object detection
 in the video demos:
