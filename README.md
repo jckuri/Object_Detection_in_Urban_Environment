@@ -423,7 +423,7 @@ behaviors. The learning rate starts in 0.015 and increases linearly up to 0.04.
 Then the learning rate decreases in a cosinusoidal way from 0 radians (maximum 
 value 0.04) to PI radians (minimum value 0).
 
-And you can see how the data augmentation strategies improved the object detection
+You can see how the data augmentation strategies improved the object detection
 in the video demos:
 [#video-demos-with-baseline-detections-and-enhanced-detections](#video-demos-with-baseline-detections-and-enhanced-detections)
 
